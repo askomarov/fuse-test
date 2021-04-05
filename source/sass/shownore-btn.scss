@@ -1,0 +1,43 @@
+.showmore-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 12px 33px;
+  border-radius: 25px;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  margin: 0 auto;
+  transition: all 0.3s ease 0s;
+
+  @media (min-width: 767.8px) {
+    &:hover {
+      border: 1px solid black;
+
+      .showmore-btn__text {
+        color: black;
+      }
+
+      .showmore-btn__icon {
+        stroke: black;
+        transform: translateX(5px);
+      }
+    }
+  }
+}
+
+.showmore-btn__text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  color: var(--card-text-color);
+  margin-right: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.showmore-btn__icon {
+  stroke: var(--card-text-color);
+  transition: all 0.3s ease 0s;
+}
